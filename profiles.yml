@@ -5,3 +5,16 @@ default:
       type: duckdb
       path: local.duckdb
       threads: 4
+tuva_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: pvfoayu-web81967
+      user: 
+      password:
+      role: ACCOUNTADMIN
+      database: tuva_project_demo
+      warehouse: compute_wh
+      schema: input_layer
+      threads: 4
